@@ -1,0 +1,6 @@
+C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.pdb
