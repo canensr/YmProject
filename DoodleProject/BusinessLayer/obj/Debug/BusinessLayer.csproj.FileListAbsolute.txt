@@ -4,3 +4,9 @@ C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\obj\Debug
 C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
 C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\ofal\OneDrive\Masaüstü\Projects\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\erend\source\repos\ENSARPROJEORNEK\YmProject\DoodleProject\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\erend\source\repos\ENSARPROJEORNEK\YmProject\DoodleProject\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\erend\source\repos\ENSARPROJEORNEK\YmProject\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\erend\source\repos\ENSARPROJEORNEK\YmProject\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\erend\source\repos\ENSARPROJEORNEK\YmProject\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\erend\source\repos\ENSARPROJEORNEK\YmProject\DoodleProject\BusinessLayer\obj\Debug\BusinessLayer.pdb
