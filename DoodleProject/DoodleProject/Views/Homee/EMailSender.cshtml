@@ -1,0 +1,261 @@
+﻿
+@{
+    ViewBag.Title = "EMailSender";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@*<div class="row same-height justify-content-center">
+    <div class="col-md-12 col-lg-10">
+        <div class="post-entry text-center">
+            <br />
+            <h1 class="">Etkinlik</h1>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="site-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-6">
+
+
+
+                <form action="#" class="p-5 bg-white">
+
+
+                    <div class="row form-group">
+
+                        <div class="col-md-12">
+                            <label class="text-black" for="email">Etkinlik Konusu</label>
+                            <input type="text" id="ActivitySubject" class="form-control">
+                        </div>
+                    </div>
+
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="text-black" for="message">Etkinlik Detayı</label>
+                            <textarea name="text" id="ActivityExplanation" cols="30" rows="3" class="form-control" placeholder=""></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label class="text-black" for="fname">Tarih Seçimi 1</label>
+                            <input type="datetime-local" id="ActivityDate" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label class="text-black" for="fname">Tarih Seçimi 2</label>
+                            <input type="datetime-local" id="ActivityDate" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label class="text-black" for="fname">Tarih Seçimi 3</label>
+                            <input type="datetime-local" id="ActivityDate" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label class="text-black" for="fname">Tarih Seçimi 4</label>
+                            <input type="datetime-local" id="ActivityDate" class="form-control">
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="col-md-6 mb-3 mb-md-0" for="fname">Süre</label>
+                        <select class="col-md-6 mb-3 mb-md-0">
+                            <option>15 Dakika</option>
+                            <option>30 Dakika</option>
+                            <option>45 Dakika</option>
+                            <option>1 Saat</option>
+                            <option>1 Saat 30 Dakika</option>
+                            <option>2 Saat</option>
+                            <option>2 Saat 30 Dakika</option>
+                            <option>3 Saat veya üzeri</option>
+
+                        </select>
+
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="col-md-6 mb-3 mb-md-0" for="fname">Platform Seçimi</label>
+                        <select class="col-md-6 mb-3 mb-md-0">
+                            <option>Canlı</option>
+                            <option>Zoom</option>
+                            <option>Google Meet</option>
+
+                        </select>
+                    </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <br />
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input type="submit" value="Gönder" class="btn btn-primary py-2 px-4 text-white">
+                </div>
+            </div>
+
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</div>*@
+
+
+
+
+
+
+
+
+@*<div class="container">
+
+        @if (ViewBag.Kontrol != null)
+        {
+            <h3 class="text-warning">@ViewBag.Kontrol</h3>
+        }
+        <div class="post-entry text-left">
+            <h1 class="">Mail Gönder</h1>
+        </div>
+
+        <div class="col-lg-5 " ng-app="">
+            @using (Html.BeginForm("EMailSender", "Homee", FormMethod.Post, new { @name = "myForm" }))
+            {
+
+
+                <div class="form-group">
+
+                    <input type="text" class="form-control" name="sendMailAdress" placeholder="Email Adresi" />
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <input type="text" class="form-control" name="subject" placeholder="Konu" id="sifre" />
+
+                </div>
+                <div class="form-group">
+
+                    <textarea name="body" class="form-control" placeholder="Açıklama"></textarea>
+
+
+                </div>
+
+                <br />
+                <div class="form-group">
+
+                    <input type="submit" class="form-control btn-primary" value="Mail Gönder" />
+
+                </div>
+
+
+            }
+        </div>
+
+    </div>*@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/contact-form-19/fonts/icomoon/style.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/contact-form-19/css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="/contact-form-19/css/style.css">
+
+    <title>Contact Form #9</title>
+</head>
+<body>
+
+
+    <div class="content">
+
+        <div class="container">
+            @if (ViewBag.Kontrol != null)
+            {
+                <h3 class="text-success">@ViewBag.Kontrol</h3>
+            }
+            <div class="row align-items-stretch no-gutters contact-wrap">
+                <div class="col-md-12">
+                    @using (Html.BeginForm("EMailSender", "Homee", FormMethod.Post, new { @name = "myForm" }))
+                    {
+                        <div class="form h-100">
+                            <h3>Oylama Linkini ve Sonucunu Gönderebilirsiniz</h3>
+                            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="" class="col-form-label">Konu *</label>
+                                        <input type="text" class="form-control" name="subject" placeholder="Konuyu Yazınız">
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="" class="col-form-label">Email *</label>
+                                        <input type="text" class="form-control" name="sendMailAdress" placeholder="Email Giriniz">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col-md-12 form-group mb-3">
+                                        <label for="body" class="col-form-label">Açıklama *</label>
+                                        <textarea class="form-control" name="body" cols="30" rows="4" placeholder="Açıklama Yazınız..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <input type="submit" value="Gönder" class="btn btn-success rounded-0 py-2 px-4">
+                                        <span class="submitting"></span>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div id="form-message-warning mt-4"></div>
+                            <div id="form-message-success">
+                                Başarıyla Gönderildi!
+                            </div>
+
+                        </div>
+                    }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script src="/contact-form-19/js/jquery-3.3.1.min.js"></script>
+        <script src="/contact-form-19/js/popper.min.js"></script>
+        <script src="/contact-form-19/js/bootstrap.min.js"></script>
+        <script src="/contact-form-19/js/jquery.validate.min.js"></script>
+        <script src="/contact-form-19/js/main.js"></script>
+
+    </body>
+</html>
+
+

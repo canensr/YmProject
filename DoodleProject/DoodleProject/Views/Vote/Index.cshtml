@@ -1,0 +1,35 @@
+﻿@using DoodleProject.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="row">
+    <div style="float:left">
+        @{
+            VoteDataModel petModel = (VoteDataModel)ViewData[VoteDataModel.GetViewDataName("Pet")];
+            petModel.ControlWidth = 200;
+            Html.RenderPartial("VoteControl", petModel);
+        }
+    </div>
+    <p style="width:300px;padding-left:10px;overflow:hidden">
+        This is a simple control with a width of 200px. Click on the button to vote,
+        or click <b>Skip to Results</b> to see the results without voting.
+    </p>
+    <div style="clear:both"></div>
+    <p>
+        This next control has a long question and long answers. The width has been set
+        to 400px.
+    </p>
+    @{
+        VoteDataModel longQuestionModel = (VoteDataModel)ViewData[VoteDataModel.GetViewDataName("LongQuestionsAndAnswers")];
+        longQuestionModel.ControlWidth = 400;
+        Html.RenderPartial("VoteControl", longQuestionModel);
+    }
+    <p>
+        You can get back to the questions by clicking on the <b>Back to Voting</b>
+        link, or see the actual number of votes (instead of the percentages) by
+        clicking on <b>Show Counts</b>
+    </p>
+</div>
+

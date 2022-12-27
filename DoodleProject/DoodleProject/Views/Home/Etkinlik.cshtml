@@ -1,81 +1,185 @@
 ﻿@model EntityLayer.Concrete.Activity
+
 @{
     ViewBag.Title = "Etkinlik";
     Layout = "~/Views/Shared/Layout.cshtml";
 }
-<br />
-<br />
-<div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('/miniblog/images/img_4.jpg');">
-    <div class="container">
-        <div class="row same-height justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <div class="post-entry text-center">
-                    <h1 class="">Etkinlik</h1>
-                    <p class="lead mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci?</p>
+
+<!doctype html>
+<html lang="en">
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/contact-form-14/fonts/icomoon/style.css">
+
+
+   
+    <link rel="stylesheet" href="/contact-form-14/css/bootstrap.min.css">
+
+    @*Style*@
+    <link rel="stylesheet" href="/contact-form-14/css/style.css">
+
+    <title>Contact Form #4</title>
+</head>
+<body>
+
+
+    <div class="content">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mr-auto">
+                    <h3 class="mb-3">Haydi ACTIVITY'le !</h3>
+                    <p>Activity, toplantılardan bir sonraki harika işbirliğine kadar her şeyi planlamanın en hızlı ve en kolay yoludur. İşlerinizi kolaylaştırmak, aktivitelerinizi hızlı bir şekilde planlayabilmek için tasarlanmıştır.</p>
+                    <p>Planlamak istediğin şey herhangi bir aktivite, etkinlik, toplantı veya halısaha buluşması bile olabilir. Yapman gereken işlem gayet basit yandaki form içerisinde bulunan Etkinlik Konusu, Etkinlik Detayı alanlarını doldurduktan sonra toplantı süresini ve gerçekleştirelecek platformun seçimini yap. Son olarak dört farklı zaman seçeneğini oluştur ve etkinlik oylamasını başlat. Bir an önce sonuca ulaş, işlerin hızlansın ve kolaylaşsın.</p>
+                    <p>Etkinlik Oluşturduktan sonra yukarıdaki menüden Activity'le butonuna tıkla. Bulunan mail gönderme formundan kolayca oylama linkini gönderebilir ve oylama sonuçlandığında sonucunu yine aynı yoldan mail olarak gönderebilirsin. Haydi sende bir an önce "ACTIVITY" leyerek toplantılarını oluştur ve bir an önce aramıza katıl... <a href="#">activityweb@gmail.com</a></p>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="box">
+                        <h3 class="heading">ACTIVITY</h3>
+                        <form class="form-group" method="post">
+                            @*<form class="mb-5" method="post" id="contactForm" name="contactForm">*@
+                            <div class="row">
+
+                                <label for="name" class="col-form-label">Etkinlik Konusu *</label>
+                                @Html.TextBoxFor(x => x.ActivitySubject, new { @class = "form-control" })
+                                <br />
+                                <br />
+                                <label for="message" class="col-form-label">Etkinlik Detayı *</label>
+                                @Html.TextAreaFor(x => x.ActivityExplanation, new { @class = "form-control" })
+                                <br />
+                                <br />
+                                <label for="budget" class="col-form-label">Süre Seçimi</label>
+                                @Html.TextBoxFor(x => x.ActivityDuration, new { @class = "form-control" })
+                                <br />
+                                <br />
+                                <label class="text-black" for="fname">Tarih Seçimi</label>
+                                @Html.TextBoxFor(x => x.ActivityDate, new { @class = "form-control" })
+                                <br />
+                                <br />
+                                <br />
+                                <button class="btn btn-info">Kaydet</button>
+
+                                @*<div class="col-md-12 form-group" method="post">
+
+
+                <label for="name" class="col-form-label">Etkinlik Konusu *</label>
+                <input type="text" class="form-control" name="Konu" id="@Html.TextBoxFor(x => x.ActivitySubject, new { @class = "form-control" })" placeholder="Konu">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 form-group" method="post">
+                <label for="message" class="col-form-label">Etkinlik Detayı *</label>
+                <textarea class="form-control" name="message" id="@Html.TextAreaFor(x => x.ActivityExplanation, new { @class = "form-control" })" cols="30" rows="7"></textarea>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 form-group" method="post">
+                <label for="budget" class="col-form-label">Süre Seçimi</label>
+                <select class="custom-select" id="@Html.TextBoxFor(x => x.ActivityDuration, new { @class = "form-control" })" name="budget">
+                    <option selected>Süre Seç...</option>
+                    <option>15 Dakika</option>
+                    <option>30 Dakika</option>
+                    <option>45 Dakika</option>
+                    <option>1 Saat</option>
+                    <option>1 Saat 30 Dakika</option>
+                    <option>2 Saat</option>
+                    <option>2 Saat 30 Dakika</option>
+                    <option>3 Saat veya üzeri</option>
+                </select>
+            </div>
+            <div class="col-md-6 form-group" method="post">
+                <label for="budget" class="col-form-label">Platform Seçimi</label>
+                <select class="custom-select" id="budget" name="budget">
+                    <option selected>Platform Seç...</option>
+                    <option>Canlı</option>
+                    <option>Zoom</option>
+                    <option>Google Meet</option>
+                    <option>Microsoft Teams</option>
+                    <option>Diğer</option>
+                </select>
+            </div>
+
+            <div class="row form-group" method="post">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="text-black" for="fname">Tarih Seçimi 1</label>
+                    <input type="datetime-local" id="@Html.TextBoxFor(x => x.ActivityDate, new { @class = "form-control" })" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="text-black" for="fname">Tarih Seçimi 2</label>
+                    <input type="datetime-local" id="@Html.TextBoxFor(x => x.ActivityDate, new { @class = "form-control" })" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="text-black" for="fname">Tarih Seçimi 3</label>
+                    <input type="datetime-local" id="@Html.TextBoxFor(x => x.ActivityDate, new { @class = "form-control" })" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="text-black" for="fname">Tarih Seçimi 4</label>
+                    <input type="datetime-local" id="@Html.TextBoxFor(x => x.ActivityDate, new { @class = "form-control" })" class="form-control">
+                </div>
+
+            </div>*@
+
+
+                            </div>
+                            
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    @*<input type="submit" value="Etkinlik Oylaması Oluştur" class="btn btn-block btn-primary rounded-0 py-2 px-4">
+                <span class="submitting"></span>*@
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="form-message-warning mt-4"></div>
+                        <div id="form-message-success">
+                            Your message was sent, thank you!
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="site-section bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 mb-6">
-
-
-
-                <form action="#" class="p-5 bg-white">
-
-
-                    <div class="row form-group">
-
-                        <div class="col-md-12">
-                            <label class="text-black" for="email">Etkinlik Konusu</label>
-                            <input type="email" id="email" class="form-control">
-                        </div>
-                    </div>
-
-
-                    <div class="row form-group">
-                        <div class="col-md-12">
-                            <label class="text-black" for="message">Etkinlik Detayı</label>
-                            <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder=""></textarea>
-                        </div>
-                    </div>
-
-                    <div class="row form-group">
-                        <div class="col-md-6 mb-3 mb-md-0">
-                            <label class="text-black" for="fname">Platform</label>
-                            <input type="text" id="fname" class="form-control">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="text-black" for="lname">Süre</label>
-                            <input type="text" id="lname" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="row form-group">
-
-                        <div class="col-md-12">
-                            <label class="text-black" for="email">Tarih Seçimi</label>
-                            <input type="email" id="email" class="form-control">
-                        </div>
-                    </div>
-
-                    <br />
-
-                    <div class="row form-group">
-                        <div class="col-md-12">
-                            <input type="submit" value="Gönder" class="btn btn-primary py-2 px-4 text-white">
-                        </div>
-                    </div>
-
-
-                </form>
-            </div>
+        
             
-        </div>
-    </div>
-</div>
+        
+
+
+        <script src="/contact-form-14/js/jquery-3.3.1.min.js"></script>
+        <script src="/contact-form-14/js/popper.min.js"></script>
+        <script src="/contact-form-14/js/bootstrap.min.js"></script>
+        <script src="/contact-form-14/js/jquery.validate.min.js"></script>
+        <script src="/contact-form-14/js/main.js"></script>
+
+</body>
+
+</html>
+
+
+<@*form class="form-group" method="post">
+    @Html.Label("Aktivite Konusu")
+    @Html.TextBoxFor(x => x.ActivitySubject, new { @class = "form-control" })
+    <br />
+    
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x => x.ActivityExplanation, new { @class = "form-control" })
+    <br />
+    @Html.Label("Süre")
+    @Html.TextBoxFor(x => x.ActivityDuration, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.ActivityDate, new { @class = "form-control" })
+    <br />
+    
+    <button class="btn btn-info">Kaydet</button>
+</form>*@
+
 

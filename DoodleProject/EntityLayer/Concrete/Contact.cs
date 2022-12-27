@@ -21,5 +21,6 @@ namespace EntityLayer.Concrete
         public string Subject { get; set; }
         
         public string Message { get; set; }
+        public int Id { get; set; }
     }
 }

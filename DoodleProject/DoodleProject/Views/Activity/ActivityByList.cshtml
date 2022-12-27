@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "ActivityByList";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+        <div>
+            <h2>Etkinlikler Listesi</h2>
+            <br />
+            <table>
+                <tr>
+                    <th> ID </th>
+                    <th> Etkinlik Konusu </th>
+                    <th> Açıklama </th>
+                    <th> Süre </th>
+                    <th> Tarih </th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ActivityID</td>
+                        <td>@item.ActivitySubject</td>
+                        <td>@item.ActivityExplanation</td>
+                        <td>@item.ActivityDuration</td>
+                        <td>@item.ActivityDate</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </body>
+    </html>
+
+
+
